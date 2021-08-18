@@ -1,0 +1,27 @@
+:root {
+/* COLORS */
+/* PRIMARY COLORS */
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+/* NEUTRAL COLORS */
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+html, body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+  margin: 0;
+  padding: 0;
+}
+body p {
+  font-size: 16px;
+}
+
+/* background */
+.background {
+  background-image: url("/images/pattern-background-mobile.svg");
+  position: absolute;
+}
+/* card */
