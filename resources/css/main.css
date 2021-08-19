@@ -8,20 +8,99 @@
 --desaturated-blue: hsl(224, 23%, 55%);
 --dark-blue: hsl(223, 47%, 23%);
 }
-
+/* global styles */
 html, body {
   font-family: 'Red Hat Display', sans-serif;
   background-color: var(--pale-blue);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 body p {
   font-size: 16px;
 }
-
+/* specific styles */
 /* background */
 .background {
-  background-image: url("/images/pattern-background-mobile.svg");
   position: absolute;
+  top: 0;
+  z-index: 1;
 }
 /* card */
+.card {
+  background-color: hsl(0,0%,100%);
+  color: hsl(228,19%,75%);
+  z-index: 2;
+  width: 287px;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.card img {
+  width: 287px;
+  height: 142px;
+}
+/* order summary */
+.order_summary {
+  margin: 0 20px;
+  text-align: center;
+
+}
+.order_summary h2 {
+  color: black;
+}
+
+/* annual plan */
+.annual_plan {
+  font-size: 0.9em;
+  border-radius: 10px;
+  background-color: hsl(230,75%,98%);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+  height: 70px;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.annual_plan_section {
+  margin-left: 10px;
+}
+.annual_plan_section span {
+  color: black;
+  font-weight: 700;
+}
+/* payment */
+.payment {
+  font-size: 0.8em;
+  font-weight: 700;
+  color:hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--bright-blue);
+  height: 45px;
+  margin: 0 20px 20px 20px;
+
+}
+/* cancel order */
+.cancel_order {
+  text-align: center;
+  color: hsl(228,16%,57%);
+  font-weight: 700;
+  margin: 0 20px 20px 20px;
+
+}
