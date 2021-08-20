@@ -11,19 +11,20 @@
 /* global styles */
 html, body {
   font-family: 'Red Hat Display', sans-serif;
-  background-color: var(--pale-blue);
+  background-color: hsl(225, 100%, 94%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
-body p {
+p {
   font-size: 16px;
 }
 /* specific styles */
@@ -33,6 +34,10 @@ body p {
   top: 0;
   z-index: 1;
 }
+@media (min-width: 400px) {
+  .background {
+    display: none;
+}
 /* card */
 .card {
   background-color: hsl(0,0%,100%);
@@ -41,7 +46,7 @@ body p {
   width: 287px;
   border-radius: 20px;
   overflow: hidden;
-
+  box-shadow: 0px 10px 20px  hsl(252,62%,89%);
 }
 .card img {
   width: 287px;
@@ -51,56 +56,74 @@ body p {
 .order_summary {
   margin: 0 20px;
   text-align: center;
-
 }
-.order_summary h2 {
-  color: black;
+.order_summary_introduction {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: hsl(219,38%,20%);
+  margin: 25px;
 }
 
 /* annual plan */
 .annual_plan {
   font-size: 0.9em;
-  border-radius: 10px;
   background-color: hsl(230,75%,98%);
-  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   margin: 0 20px 20px 20px;
   height: 70px;
+  border-radius: 10px;
 }
 .left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.right {
+  font-size: 0.8em;
+}
+.right a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
 .annual_plan_section {
   margin-left: 10px;
 }
 .annual_plan_section span {
-  color: black;
+  color: hsl(219,38%,20%);
   font-weight: 700;
+  font-size: 0.8em;
 }
 /* payment */
 .payment {
   font-size: 0.8em;
   font-weight: 700;
   color:hsl(225, 100%, 94%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
-  background-color: var(--bright-blue);
+  background-color: hsl(245, 75%, 52%);
   height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 0 20px 20px 20px;
-
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px hsl(252,62%,89%);
+}
+.payment:hover {
+  cursor: pointer;
+  background-color: hsl(244,82%,68%);
 }
 /* cancel order */
 .cancel_order {
-  text-align: center;
-  color: hsl(228,16%,57%);
+  font-size: 0.9em;
   font-weight: 700;
+  color: hsl(228,16%,57%);
   margin: 0 20px 20px 20px;
-
+  text-align: center;
+}
+.cancel_order:hover {
+  cursor: pointer;
+  color: hsl(219,38%,20%);
 }
