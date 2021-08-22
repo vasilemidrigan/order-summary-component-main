@@ -19,15 +19,7 @@ Users should be able to:
 
 ### Screenshots
 
-Project screenshoots right here:
-
-![](./screenshot.jpg)
-
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+To see the project screenshots, go to screenshots folder.
 ### Built with
 
 - Semantic HTML5 markup
