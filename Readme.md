@@ -31,4 +31,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Vasile Midrigan](https://www.vasilemidrigan.github.io)
+- Website - [Vasile Midrigan](https://vasilemidrigan.github.io/)
